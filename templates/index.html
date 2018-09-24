@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+   <head>
+      <title>GPIO Control</title>
+      <link rel="stylesheet" href='../static/master.css'/>
+   </head>
+	
+   <body>
+		
+		
+		<h2> brightness Status </h2>
+		
+		<h3> YLW LED ==>  {{ ledYlw  }} % </h3>
+		
+		<br>
+		<h2> Commands </h2>
+		
+		<h3> 
+			YLW LED Ctrl ==> 
+			<a href="/ledYlw/on" class="button">TURN ON</a>  
+			<a href="/ledYlw/off"class="button">TURN OFF</a>
+		</h3>
+	
+		<br>
+		<h3>
+			YLW LED brightness control ==>
+			<br>
+			 <form action="/">
+  enter 0-100: <input type="text" name="brightness">
+  <br>
+  
+  <input type="submit" value="Submit">
+</form>
+<br>
+<img src="{{ url_for('video_feed') }}">
+   </body>
+</html>
